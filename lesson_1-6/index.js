@@ -342,13 +342,29 @@
     - pad(str) - получает парметр str (строку) и добавляет ее в начало и в конец _value
 */
 
-const builder = new StringBuilder('.');
+// const builder = new StringBuilder('.');
 
-builder.append('^'); 
-console.log(builder.value); // '.^'
+// builder.append('^'); 
+// console.log(builder.value); // '.^'
 
-builder.prepend('^'); 
-console.log(builder.value; // '^.^'
+// builder.prepend('^'); 
+// console.log(builder.value; // '^.^'
 
-builder.pad('='); 
-console.log(builder.value; // '=^.^='
+// builder.pad('='); 
+// console.log(builder.value; // '=^.^='
+
+// function returnAnswer (){
+//   let acc = 0;
+//   for (let i of arr) {     
+//      acc +=i
+//   }
+//   return acc;  
+// }
+// let array = [1, 2, 3, 4, 5, 6]
+
+//  console.log(myReduce(returnAnswer ()));
+ 
+const element = document.createElement('div'); 
+// console.log(element); 
+element.textContent = 'This is a heading';
+console.log(element); 
