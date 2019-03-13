@@ -248,3 +248,88 @@
 // // }
 // // createCard(posts);
 
+// // const addBtn = document.querySelector('button[data-action="add"]');
+// // const removeBtn = document.querySelector('button[data-action="remove"]');
+// // const btn = document.querySelector("#btn");
+
+// // const handleClick = () => {
+// //   alert("CLICK EVENT LISTENER ALERT!");
+// // };
+
+// // const handleAdd = 
+
+// // addBtn.addEventListener("click", handleAdd);
+
+
+// // removeBtn.addEventListener("click", () => {
+// //   btn.removeEventListener("click", handleClick);
+// // });
+
+// // const user = {
+// //   name: 'Mango',
+// //   showName() {
+// //     console.log(this);
+// //     // this будет ссылаться на button
+// //     // если использовать showName как callback
+// //     // console.log(`My name is: ${this.name}`);
+// //     // тут undefined так как поля name нету у button
+// //   }
+// // }
+
+// // Представим что у нас есть кнопка с классом js-btn
+// // Выберем ее и повесим на нее слушатель клика
+// // const btn = document.querySelector('.js-btn');
+
+// // user.showName(); //работает
+// // btn.addEventListener('click', user.showName); // не работает
+// // btn.addEventListener('click', user.showName.bind(user)); // работает
+
+// const btn = document.querySelector("#btn");
+
+// // event - это и есть обьект события который автоматически 
+// // передается первым аргументом, мы можем называть его как угодно, 
+// // хоть qwerty, но чаще всего он называется или e, evt или event
+
+// const handleClick = event => {
+//   console.log("event: ", event); //откройте консоль чтобы увидеть весь объект целиком
+
+//   console.log("event type: ", event.type); // event type:  click
+
+//   // будет window, так как мы используем стрелочную функцию, 
+//   // которая использует внешний контекст 
+//   // Если использовать обычную функцию то this будет самим элементом 
+//   // button и равен currentTarget
+//   console.log("this: ", this); 
+//   console.log("target: ", event.target); // <button id="btn">CLICK ME!</button>
+// };
+
+// btn.addEventListener("click", handleClick);
+
+// ------------------------ 8-1 ---------------------------//
+// /Задача №1
+// //Алерт по нажатию на кнопку.
+// //При нажатии на кнопку "Нажми на меня"
+// //выводиться сообщение 'Привет!
+// <html>
+// <head>
+//    <meta charset="utf-8">
+//    <title>Задачи по DOM</title>
+//    <style>
+//    </style>
+//    <script>
+//    </script>
+// </head>
+// <body>
+//  <button >Нажми на меня!</button>
+// </body>
+// </html>
+// const x = document.querySelector('button');
+// const handClick = () => alert ('Привет!');
+// x.addEventListener('click', handClick);
+//---------------------
+let inp = document.querySelector('input');
+let button = document.querySelector('button');
+let enteredButton = () => {  
+  alert(inp.value);
+}
+button.addEventListener('click', enteredButton)
