@@ -1,0 +1,20 @@
+{
+  "name": "Cheburashka",
+  "version": "1.0.0",
+  "description": "development of Cheburashka",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "s": "node index.js"
+  },
+  "author": "Bootcamp_10",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-rigger": "^0.5.8"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2"
+  }
+}
