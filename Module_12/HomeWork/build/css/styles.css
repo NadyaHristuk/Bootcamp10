@@ -1,0 +1,96 @@
+/*
+   Import partials below
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: rgba(241, 241, 255, 0.2);
+}
+
+.container {
+  width: 500px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.form {
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.form__input {
+  width: 300px;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form__submit {
+  width: 100px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 3px 3px 5px 2px grey;
+}
+
+.delete {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.link-img {
+  background: red;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card a:hover {
+  color: #7c0000;
+}

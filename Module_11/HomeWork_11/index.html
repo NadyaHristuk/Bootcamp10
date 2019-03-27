@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+        <form class="form js-form">
+                <section>
+                  <h2>Screen size</h2>
+                  <ul>
+                    <li><label><input type="checkbox" name="size" value="13"> 13"</label></li>
+                    <li><label><input type="checkbox" name="size" value="15" > 15"</label></li>
+                    <li><label><input type="checkbox" name="size" value="17" > 17"</label></li>
+                  </ul>
+                </section>
+                <section>
+                  <h2>Color</h2>
+                  <ul>
+                    <li><label><input type="checkbox" name="color" value="white"> white</label></li>
+                    <li><label><input type="checkbox" name="color" value="gray"> gray</label></li>
+                    <li><label><input type="checkbox" name="color" value="black"> black</label></li>
+                  </ul>
+                </section>
+                <section>
+                  <h2>Release date</h2>
+                  <ul>
+                    <li><label><input type="checkbox" name="release_date" value="2015"> 2015</label></li>
+                    <li><label><input type="checkbox" name="release_date" value="2016"> 2016</label></li>
+                    <li><label><input type="checkbox" name="release_date" value="2017"> 2017</label></li>
+                  </ul>
+                </section>
+                <button type="submit" id='sub'>Filter</button>
+                <button type="reset" id='res'>Clear</button>
+              </form>
+    <div class="wrapper"></div>
+
+    <template id="laptops-temp">
+        {{#each data}}
+            <div class='cards'>
+                <img src="{{img}}" alt="{{name}}">
+                <h2 class="title">{{name}}</h2>
+                <ul class="param">
+                    <li class="size">{{size}}</li>
+                    <li class="color">{{color}}</li>
+                    <li class="release-date">{{release_date}}</li>
+                </ul> 
+                <h3 class="price">{{price}} UAH</h3>
+                <p class="descr">{{descr}}</p>
+            </div>
+        {{/each}}
+    </template>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src='js/index.js'></script>
+</body>
+</html>

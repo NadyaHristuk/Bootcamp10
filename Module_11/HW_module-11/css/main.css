@@ -1,0 +1,103 @@
+ul{
+    list-style: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #fff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    font-size: 16px;
+}
+
+.section {
+    margin-left: 40px;
+}
+
+.section h2{
+    margin: 0 auto;
+    color: #004c40;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.js-btn {
+    min-width: 88px;
+    height: 36px;
+    padding: 0 16px;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #004c40;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(#414141, 0.3);
+    margin-left: 60px;
+ 
+  }
+.js-btn:hover {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(0, 0, 0, 0.6);
+    background-color: #00796b;
+}
+
+.laptop {
+    border: 0;
+    width: 350px;
+    margin-top: 40px;
+    outline: 0;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #004c40;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.laptop:hover {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(0, 0, 0, 0.6);
+    background-color: #00796b;
+}
+
+.laptop h2 {
+    font-size: 17px;
+    text-align: center;
+}
+
+.laptop img {
+    display: block;
+    margin: 0 auto;
+}
+
+.specification {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight:bold;
+    color: black;
+}
+
+
+.description {
+    text-align: center;
+}
+
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

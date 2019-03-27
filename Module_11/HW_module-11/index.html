@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Homework 11</title>
+</head>
+<body>
+    <form class="form js-form">
+        <div class="wrapper">
+            <section class="section">
+                <h2>Screen size</h2>
+                <ul>
+                    <li><label><input type="checkbox" name="size" value="13"> "13"</label></li>
+                    <li><label><input type="checkbox" name="size" value="15"> "15"</label></li>
+                    <li><label><input type="checkbox" name="size" value="17"> "17"</label></li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>Color</h2>
+                <ul>
+                    <li><label><input type="checkbox" name="color" value="white"> white</label></li>
+                    <li><label><input type="checkbox" name="color" value="gray"> gray</label></li>
+                    <li><label><input type="checkbox" name="color" value="black"> black</label></li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>Release date</h2>
+                <ul>
+                    <li><label><input type="checkbox" name="release_date" value="2015"> 2015</label></li>
+                    <li><label><input type="checkbox" name="release_date" value="2016"> 2016</label></li>
+                    <li><label><input type="checkbox" name="release_date" value="2017"> 2017</label></li>
+                </ul>
+            </section>
+        </div>
+        <div class="btn-wrapper">
+            <button class="js-btn-filter js-btn" type="submit">Filter</button>
+            <button class="js-btn-clear js-btn" type="reset">Clear</button>
+        </div>
+    </form>
+    <div id="root"></div>
+    <template class="laptop-template">
+        {{#each laptops}}
+        <div class="laptop">
+            <h2>{{name}}</h2>
+            <img src="http://demo.posthemes.com/pos_zadademo/images/placeholder.png" alt="laptop image" width="200px">
+            <p class="specification">Size: {{size}}</p>
+            <p class="specification">Color: {{color}}</p>
+            <p class="specification">Release date: {{release_date}}</p>
+            <p class="description">Description:</p>
+            <p class="description">{{descr}}</p>
+            <h2>Price: {{price}} ₴</h2>
+        </div>
+        {{/each}}
+    </template>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

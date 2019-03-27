@@ -1,0 +1,19 @@
+
+<div class="container">
+  <form class="form">
+    <input type="text" class="form__input" placeholder="Enter URL without 'https://'">
+    <button type='submit' class='form__submit'> add card</button>
+</form>  
+</div>
+
+<div class="wrapper"></div>
+
+<!-- template -->
+<template id="cards-template">
+    <div class="card">
+        <button class="delete">X</button>
+        <img src='{{image}}' alt="{{title}}" class="link-img">
+        <h2><a href="{{url}}" class="card-link" target="_blank">{{title}}</a></h2>
+        <p>{{description}}</p>
+    </div>
+</template>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/add-task-01.css">
+    <title>add task 1</title>
+</head>
+<body>
+    <!-- <ul class="cats-list"></ul>
+    <div class="grid">
+    <div id="root"></div>
+
+    <template class="cat-list-tamplate">
+        {{#each this}}
+        <li>
+            <h2>Name: {{name}}</h2>
+            <p>Age: {{age}}</p>
+        </li>
+        {{/each}}
+    </template>
+
+        <template id="cat-card">
+            <div class="cat">
+                <img src="{{img}}" alt="cute cat">
+                <h2>Name: {{name}}</h2>
+                <p>Age: {{age}}</p>
+            </div>
+        </template>
+    </div> -->
+
+    <ul class="list"></ul>
+    
+
+    <template class="items-template">
+        {{#each this}}
+            <li class="item">
+                <p class="name">Name: {{name}}</p>
+                <span class="count">Count: {{count}}</span>
+            </li>
+        {{/each}}
+    </template>
+
+
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="./js/add-task-01.js"></script>
+</body>
+</html>
