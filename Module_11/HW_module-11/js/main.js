@@ -148,12 +148,15 @@ const laptops = [
 ];
 
 const root = document.querySelector('#root');
+
 const source = document.querySelector('.laptop-template').innerHTML.trim();
 const template = Handlebars.compile(source);
-const markup = template({laptops: laptops});
+const markup = template(Obj);
+
 const inputs = document.querySelectorAll('.js-form input');
 const clearBtn = document.querySelector('.js-btn-clear');
 const filterBtn = document.querySelector('.js-btn-filter');
+
 root.insertAdjacentHTML('beforeend', markup);
 
 clearBtn.addEventListener('click', () => {
@@ -175,9 +178,23 @@ function createFilter(nodeList) {
   return filter;
 }
 
-function filterLaptops(filter) {
+function filterLaptops(filter) {  
   return laptops
-  .filter(x => filter.size.length? filter.size.indexOf(String(x.size)) >=0 :true)
-  .filter(x => filter.color.length? filter.color.indexOf(String(x.color)) >=0 :true)
+  .filter(x => filter.size.length ? filter.size.indexOf(String(x.size)) >=0 : true)
+  .filter(x => filter.color.length? filter.color.indexOf(String(x.color)) >=0 : true)
   .filter(x => filter.release_date.length? filter.release_date.indexOf(String(x.release_date)) >=0 :true);
 }
+
+let one = 23;
+let sum = one+1;
+function sayHi() {
+  alert("Hello!");
+};
+
+export {sayHi, sum} //module.js
+
+//=============================================
+// main.js
+import {sayHi, sum} from "./module.js";
+
+

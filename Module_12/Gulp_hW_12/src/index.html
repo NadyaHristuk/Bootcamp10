@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Placeholder title</title>
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+
+  <body>
+    <input type="text" placeholder="vvedite adress saita" />
+    <button class="add">
+      add new site
+    </button>
+
+    <div class="wrapper"></div>
+
+    <template class="cardTemplate">
+      <div>
+        <a href="{{title}}">{{title}}</a>
+        <button class="del">Удалить</button>
+      </div>
+    </template>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+  </body>
+</html>
