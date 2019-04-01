@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.gallary{
+    width: 860px;
+    
+    margin:  0 auto;
+    text-align: center;
+}
+
+.photos{
+    position: relative;
+    height: 670px;
+}
+
+
+.photos img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opasity 1s;
+}
+
+.photos >.showed{
+    opacity: 1;
+}

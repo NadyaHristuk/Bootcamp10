@@ -185,16 +185,45 @@ function filterLaptops(filter) {
   .filter(x => filter.release_date.length? filter.release_date.indexOf(String(x.release_date)) >=0 :true);
 }
 
-let one = 23;
-let sum = one+1;
-function sayHi() {
-  alert("Hello!");
-};
 
-export {sayHi, sum} //module.js
 
 //=============================================
-// main.js
-import {sayHi, sum} from "./module.js";
 
 
+// let form = document.querySelector(".js-form");
+// let btnFilter = document.querySelector("button[type='submit']");
+// let btnClear = document.querySelector("button[type='reset']");
+
+// let filter = { size: [], color: [], release_date: [] };
+
+// function clear() {
+//   filter = { size: [], color: [], release_date: [] }
+// }
+// filter[checkbox.name]
+// checkbox.name=size;
+// filter.size = filter[checkbox.name]
+
+// form.addEventListener('click', (event) => {
+//   if (event.target.type !== 'checkbox') return;
+
+//   const checkbox = event.target;
+
+//   if (filter[checkbox.name].includes(checkbox.value)) {
+//     filter[checkbox.name] = filter[checkbox.name].filter(item => item !== checkbox.value);
+//   } else {
+//     filter[checkbox.name].push(checkbox.value);
+//   }
+// });
+
+// btnFilter.addEventListener('click', (event) => {
+//   event.preventDefault();
+//   console.log('filter', filter);
+
+//   const filterToUse = Object.keys(filter).filter(filterKey => filter[filterKey].length);
+
+//   const laptopsList = laptops.filter(laptop => filterToUse.every(filterToUseKey => filter[filterToUseKey].includes(String(laptop[filterToUseKey]))));
+
+//   console.log('result', laptopsList);
+// });
+
+// btnClear.addEventListener('click', clear);
