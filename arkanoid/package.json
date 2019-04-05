@@ -1,0 +1,23 @@
+{
+  "name": "arkanoid",
+  "version": "1.0.0",
+  "description": "arkanoid game",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "watch": "webpack -w",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "BC_10",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "jest": "^24.7.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}

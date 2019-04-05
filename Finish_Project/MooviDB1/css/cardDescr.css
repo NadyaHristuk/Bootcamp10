@@ -1,0 +1,569 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 90%;
+}
+.card-descr {
+  margin: 40px auto;
+}
+.card-descr_background {
+  background-color: #addad6;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  
+}
+.card-descr_cover {
+  width: 185px;
+  height:280px;
+  position: relative;
+  background: 
+    url(../images/Clip\ Group_@1X.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  
+  margin: 20px auto;
+  border: 4px solid rgb(248, 247, 247);
+}
+.card-descr_title {
+ text-align: center;
+ color: #5c5b5b;
+  font-size: 20pt;
+  font-family: Roboto-Medium, sans-serif;
+  font-weight: 700;
+}
+.card-descr_iconConteiner {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #9a9a9a;
+}
+.card-descr_iconBell {
+  width: 20px;
+  height: 20px;
+ margin-right: 15px;
+  fill: #addad6;
+}
+.card-descr_iconStar {
+  width: 20px;
+  height: 20px;
+ 
+  fill:#addad6;
+}
+#bell {
+  width: 20px;
+  height: 20px;
+}
+#star {
+  top: 20px;
+  right: 60px;
+}
+.card-descr_iconBell:hover {
+  fill: orange;
+}
+.card-descr_iconStar:hover {
+  fill: orange;
+}
+.card-descr_titleDesktop {
+  display: none;
+}
+.card-desc_table {
+  display: none;
+}
+.card-descr_about {
+  display: none;
+}
+.card-descr_aboutfilm{
+  font-size: 16pt;
+  color: #706f6f;
+  font-family: Roboto, sans-serif;
+}
+@media (min-width: 768px) {
+ 
+  .card-descr_mainCont {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .card-descr_background {
+    width: 45%;
+    height: 50%;
+    background-color: #addad6;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  
+  .card-descr_cover {
+    background: url(../images/Clip\ Group_@1X\ \(2\).png);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+  }
+  .card-descr_title {
+    display: none;
+  }
+  .card-descr_conteinerDescript {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    color: #706f6f;
+  }
+  .card-descr_titleDesktop {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 20pt;
+    font-family: Roboto-Medium, sans-serif;
+    font-weight: 700;
+    color: rgba(55, 44, 72, 255);
+  }
+  .card-descr_date {
+    display: none;
+  }
+  .card-desc_table {
+    border-collapse: collapse;
+  font-size: 16pt;
+  font-family: Roboto, sans-serif;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .card-desc_tbody{
+    width: 100%;
+  }
+  .first {
+    width: 100px;
+    height: 30px;
+    padding-left: 5px;
+   
+  }
+  .second {
+    width: 500px;
+    padding-left: 5px;
+    border: none;
+    
+  }
+  .table_color {
+    background-color: #addad6;
+  }
+  .card-desc_table tr {
+width: 100%;
+  }
+  .card-descr_about {
+    display: block;
+    margin-bottom: 10px;
+    color: #706f6f;
+    font-size: 20pt;
+    font-family: Roboto-Medium, sans-serif;
+    font-weight: 700;
+  }
+  
+}
+@media (min-width: 1024px) {
+  .wrapper {
+    max-width: 1100px;
+  }
+.first {
+  width: 100px;
+}
+.second {
+  width: 700px;
+}
+}
+/* Victor */
+.Viktor {
+  min-width: 480px;
+  /* background-color: aqua; */
+}
+
+.wrapper_Vikror {
+  margin: auto;
+  width: 90%;
+  /* background-color: aquamarine; */
+}
+
+.user_Victor {
+  display: flex;
+  align-items: center;
+
+}
+
+
+
+.icon_Victor {
+  /* margin: auto; */
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  top: 0;
+}
+
+.Viktor {
+  max-width: 1024px;
+
+}
+
+.name_Victor {
+  width: 50%;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+
+
+.review_Victor {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* сколько оставить строк */
+  -webkit-box-orient: vertical;
+  margin-bottom: 10px;
+}
+
+
+.reviews_Victor{
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+
+  .review_Victor {
+    width: 100%;
+  }
+
+
+
+
+  .icon_Victor {
+    /* margin: auto; */
+    width: 60px;
+    height: 60px;
+
+  }
+
+}
+
+
+@media (min-width: 1024px) {
+
+  .Viktor {
+    max-width: 1440px;
+
+  }
+
+  .wrapper_Vikror {
+    width: 65%;
+  }
+
+  .review_Victor {
+    font-size: 12pt;
+  }
+
+
+  .name_Victor {
+    font-size: 14pt;
+  }
+}
+
+/* Natalia Verb CSS */
+.section-head {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #6d6777;
+}
+
+.actors-list {
+  margin-bottom: 67px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actors, .trailer {
+  margin-left: 16px;
+  margin-right: 16px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.actor-item {
+  width: 67px;
+  height: 94px;
+  margin-right: 14px;
+}
+
+.photo-wrapper {
+  width: 100%;
+  margin-bottom: 17px;
+  height: 67px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.actor-photo {
+  width: 67px;
+}
+
+.right-actors, .left-actors {
+  margin: auto;
+}
+
+.actor-name {
+  color: #8dcac5;
+  font-size: 19px;
+  text-align: center;
+}
+
+.trailer {
+  margin-bottom: 36px;
+}
+
+.wrapper-video {
+  width: 328px;
+  height: 201px;
+  margin: auto;
+}
+
+.trailer-video {
+  width: 100%;
+  height: 100%;
+}
+
+.film-frame {
+  display: none;
+}
+
+.btn-js, .btns-js {
+  margin: auto;
+}
+
+.actors .arrows .btn-js {
+  display: none;
+  width: 100%;
+}
+
+.actors-frame {
+  align-items: baseline;
+}
+
+.wrap-arr {
+  width: 20px;
+  margin-right: 10px;
+
+}
+
+@media  (min-width: 480px) {
+
+  .section-head {
+    margin-bottom: 16px;
+  }
+
+  .actors-list {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .actors {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .trailer {
+    margin-bottom: 48px;
+  }
+
+
+  .wrapper-video {
+    width: 368px;
+    height: 226px;
+  }
+  .wrap-arr {
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media  (min-width: 768px){
+  .actors-trailer {
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+
+  .actors-frame {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .frame-list {
+    display: flex;
+    padding-top: 8px;
+    margin-left: 24px;
+    margin-right: 10px;
+  }
+
+  .arrows {
+    display: flex;
+    width: 100%;
+  }
+
+  .film-frame {
+    display: block;
+    width: 46%;
+  }
+  
+  .actors {
+    width: 40%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .click-left, .click-right {
+    display: block;
+    width: 5px;
+    height: 9px;
+    margin: auto;
+  }
+
+  .click-left {
+    margin-right: 10px;
+    margin-left: 0;
+  }
+
+  .click-right {
+    margin-left: 10px;
+  }
+
+  .actors-list {
+    margin-bottom: 0;
+    padding-left: 10px;
+  }
+
+  .actor-name {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .actor-item {
+    width: 67px;
+    margin-right: 14px;
+  }
+
+  .photo-wrapper {
+    width: 100%;
+    height: 67px;
+    margin-bottom: 1px;
+  }
+
+  .frame-item {
+    width: 60px;
+    height: 90px;
+    margin-right: 4px;
+  }
+
+  .frame {
+    width: 100%;
+    height: 100%;
+  }
+
+  .actors .arrows .btn-js {
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+@media  (min-width: 960px) {
+  .actors-trailer {
+    width: 80%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+}
+
+@media  (min-width: 1024px) {
+  .actors-trailer {
+    width: 90%;
+  }
+
+  .actors-list {
+    margin-left: 24px;
+    margin-right: 10px;
+  }
+
+  .section-head {
+    margin-bottom: 26px;
+  }
+
+  .trailer {
+    margin-bottom: 71px;
+  }
+
+  .btn-js {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .actor-item {
+    width: 67px;
+  }
+
+  .film-frame {
+    display: block;
+    width: 60%;
+  }
+
+  .actors {
+    width: 100%;
+    margin: 0;
+  }
+
+  .actor-name {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .photo-wrapper {
+    width: 100%;
+    margin-bottom: 1px;
+  }
+
+  .frame {
+    width: 100%;
+  }
+  .wrapper-video {
+    width: 714px;
+    height: 435px;
+  }
+}
+
+@media  (min-width: 1440px) {
+  .actors-trailer {
+    max-width: 1100px;
+    margin-bottom: 86px;
+  }
+
+  .trailer {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .wrapper-video {
+    margin-bottom: 71px;
+  }
+}

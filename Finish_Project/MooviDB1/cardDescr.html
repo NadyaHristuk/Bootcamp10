@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/cardDescr.css" />
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <header>
+      <section class="headerSection">
+          <div class="headerWrapper">
+  
+              <div class="headerFlex">
+                  <div class="headerMenu">
+  
+                          <span class="menu-icon closed" id="js-menuBtn"></span></div>
+  
+  
+                  <div class="headerLogo"><img src="images/menuLogo.png" width="25px" height="25px" alt="picture"></div>
+                  <div class="headerTitle">
+                      <h2 class="headerTitleText">Mooogle</h2>
+                  </div>
+              </div>
+              <div>
+                  <div> <input class="headerInput inputCard" type="" name="" placeholder="Search"></div>
+                  <div class="headerSearch">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                          id="Capa_1" x="0px" y="0px" viewBox="0 0 52.966 52.966"
+                          style="enable-background:new 0 0 52.966 52.966;" xml:space="preserve" width="20px" height="20px"
+                          class="">
+                          <g>
+                              <path
+                                  d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21  c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279  C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19  S32.459,40,21.983,40z"
+                                  data-original="#000000" class="active-path" data-old_color="#f9f0da" fill="#372c48" />
+                          </g>
+                      </svg>
+  
+                  </div>
+              </div>
+          </div>
+  
+          <!-- <div class="hiddenSearch">
+  
+              <div>
+                  <img src="images/bigCow.png" alt="bigCow"></div>
+              <h2 class="hiddenSearchText">Mooogle</h2>
+              <input class="hiddenSearchInput " type="" name="" placeholder="Search">
+  
+          </div> -->
+      </section>
+  
+  
+  
+  
+      <section class="menu menu-container closed" id="js-menuContainer">
+          <div class="menuWrapper">
+  
+              <div class="menuCow">
+                  <img class="menuLogo" src="images/menuLogo.png" alt="cow">
+                  <p class="cowTitle">
+                      Mooogle </p>
+              </div>
+  
+              <div class="menuFlex">
+                  <label for="idishka1">
+                      <div class="menuIcon">
+                          <svg class="menuSvg" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 192 192"
+                              width="20px">
+                              <path class="menuSvg"
+                                  d="m192 96c0-53.019531-42.980469-96-96-96s-96 42.980469-96 96 42.980469 96 96 96h96v-16h-43c26.839844-17.769531 42.988281-47.808594 43-80zm-48.976562 64.722656c-10.722657 7.789063-25.734376 5.414063-33.523438-5.3125-7.789062-10.722656-5.414062-25.730468 5.308594-33.523437 10.726562-7.789063 25.734375-5.414063 33.523437 5.3125 7.792969 10.722656 5.414063 25.730469-5.308593 33.523437zm-1.179688-104.851562c12.605469-4.097656 26.144531 2.800781 30.242188 15.40625 4.09375 12.609375-2.804688 26.148437-15.410157 30.242187-12.605469 4.097657-26.144531-2.800781-30.242187-15.40625-4.09375-12.605469 2.804687-26.148437 15.410156-30.242187zm-45.84375-39.871094c13.253906 0 24 10.746094 24 24s-10.746094 24-24 24-24-10.746094-24-24 10.746094-24 24-24zm-76.085938 55.277344c4.097657-12.605469 17.636719-19.503906 30.242188-15.410156 12.605469 4.097656 19.503906 17.636718 15.410156 30.242187-4.097656 12.605469-17.636718 19.503906-30.242187 15.410156s-19.503907-17.632812-15.410157-30.242187zm62.585938 84.132812c-7.789062 10.726563-22.800781 13.101563-33.523438 5.3125-10.722656-7.792968-13.101562-22.800781-5.308593-33.523437 7.789062-10.722657 22.800781-13.101563 33.523437-5.308594 10.722656 7.789063 13.097656 22.796875 5.308594 33.519531zm5.5-59.410156c0-4.417969 3.582031-8 8-8s8 3.582031 8 8-3.582031 8-8 8-8-3.582031-8-8zm0 0"
+                                  fill="#372c48" /></svg>
+  
+                      </div>
+                  </label>
+                  <div class="menuRightBlock">
+  
+                      <label for="idishka1">
+                          <h2 class="menuTitle">Фильмы</h2>
+                      </label>
+                      <input type="checkbox" id="idishka1" class="click">
+  
+                      <ul class="menuList">
+                          <li><a href="#">Премьеры</a></li>
+                          <li><a href="#">Сейчас на экранах</a></li>
+                          <li><a href="top100.html">Топ 100</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="menuFlex">
+                  <label for="idishka2">
+                      <div class="menuIcon">
+                          <svg class="menuSvg" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -87 432 432"
+                              width="20px">
+                              <path class="menuSvg"
+                                  d="m278.90625 0h-248.90625c-16.5625.0195312-29.9804688 13.4375-30 30v197.421875c.0195312 16.5625 13.4375 29.980469 30 30h248.90625c16.558594-.019531 29.980469-13.4375 30-30v-197.421875c-.019531-16.5625-13.441406-29.9804688-30-30zm0 0"
+                                  fill="#372c48" />
+                              <path d="m328.90625 169.800781 103.09375 56.285157v-194.105469l-103.09375 56.285156zm0 0"
+                                  fill="#372c48" /></svg>
+  
+                      </div>
+                  </label>
+                  <div class="menuRightBlock">
+                      <label for="idishka2">
+                          <h2 class="menuTitle">Сериалы</h2>
+                      </label>
+                      <input type="checkbox" id="idishka2" class="click">
+                      <ul class="menuList">
+                              <li><a href="#">Популярные</a></li>
+                              <li><a href="#">Сейчас в эфире</a></li>
+                              <li><a href="#">Лучший рейтинг</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="menuFlex">
+                  <label for="idishka3">
+                      <div class="menuIcon">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                              id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 306 306"
+                              style="enable-background:new 0 0 306 306;" xml:space="preserve">
+                              <g>
+                                  <g id="star-rate">
+                                      <polygon class="menuSvg"
+                                          points="153,230.775 247.35,299.625 211.65,187.425 306,121.125 191.25,121.125 153,6.375 114.75,121.125 0,121.125     94.35,187.425 58.65,299.625   "
+                                          fill="#372c48" />
+                                  </g>
+  
+                          </svg>
+                      </div>
+                  </label>
+                  <div class="menuRightBlock">
+                      <label for="idishka3">
+                          <h2 class="menuTitle">Избранное</h2>
+                      </label>
+                      <input type="checkbox" id="idishka3" class="click">
+                      </div>
+              </div>
+  
+  
+          </div>
+      </section>
+  </header>
+      <section class="main__wrapper--relative">
+          <!--section juli -->
+        <div class="modal_container_wrapper js_container_wrapper close_modal">
+            <div class="modal_container_bg">
+                <div class="close_modal_icon js_close_icon"></div>
+                <div class="form__content js_form__content">
+                    <h2 class="form__title">Подписаться на изменения</h2>
+                    <form class="form js_form">
+                        <span class="form__span">
+                            <input class="form__field js_input" id="Full-name" type="text" name="name" pattern="^[^0-9]+$" required>
+                            <label class="form__inner" for="Full-name">
+                                <span class="form__content_label">Name</span>
+                            </label>
+                        </span>
+                        
+                        <span class="form__span">
+                            <input class="form__field js_input" id="email" type="email" name="name" required>
+                            <label class="form__inner" for="email">
+                                <span class="form__content_label">Email</span>
+                            </label>
+                        </span>
+                        <span class="form__span">
+                            <input class="form__field js_input" id="telephone" type="text" name="name" pattern="^[^A-Za-zА-Яа-яЁё]+$" required>
+                            <label class="form__inner" for="telephone">
+                                <span class="form__content_label">Phone</span>
+                            </label>
+                        </span>
+                        <input type="submit" value="submit" class="form__button_submit">
+                    </form>
+                </div>
+                <div class="thanks_message_modal js_thanks_message_modal">
+                    <h2 class="thanks_message_modal_title">Спасибо</h2>
+                    <p class="thanks_message_modal_content">Теперь вы будете получать уведомления о изменениях в "фильме". Вы всегда сможите отписаться перейдя по <a href="">ссылке</a> в письме.</p>
+                    <button class="form__button_submit form__button_submit--bottom js_submit_ok">ok</button>
+                </div>
+            </div>
+        </div>
+        <!-- Natalia Ts -->  
+        <section class="card-descr wrapper">
+            <div class="card-descr_mainCont">
+              <div class="card-descr_background">
+                <div class="card-descr_cover js-cover"></div>
+                <p class="card-descr_title">Темные времена (2017)</p>
+              </div>
+              <div class="card-descr_conteinerDescript">
+                <p class="card-descr_titleDesktop">Темные времена (2017)</p>
+                <div class="card-descr_iconConteiner">
+                  <div class="card-descr_icons">
+                    <svg class="card-descr_iconBell ">
+                      <use
+                        href="./images/iconBell.svg#bell"
+                        class="iconStarTrue"
+                      ></use>
+                    </svg>
+                    <svg class="card-descr_iconStar js-open_modal">
+                      <use href="./images/iconStar.svg#star"></use>
+                    </svg>
+                  </div>
+                  <div class="card-descr_date"><p>12.12.12</p></div>
+                </div>
+                <table class="card-desc_table">
+                  <tbody class="card-desc_tbody">
+                    <tr>
+                      <td class="first table_color ">страна</td>
+                      <td class="second table_color js-country">США</td>
+                    </tr>
+                    <tr>
+                      <td class="first">слоган</td>
+                      <td class="second js-tagline">"Никогда не сдавайся"</td>
+                    </tr>
+                    <tr>
+                      <td class="first table_color">режиссер</td>
+                      <td class="second table_color js-director">Джо Райт</td>
+                    </tr>
+                    <tr>
+                      <td class="first">сценарий</td>
+                      <td class="second js-scenario">Энтони</td>
+                    </tr>
+                    <tr>
+                      <td class="first table_color">жанр</td>
+                      <td class="second table_color js-genres">драма</td>
+                    </tr>
+                    <tr>
+                      <td class="first">время</td>
+                      <td class="second js-runtime">125 мин</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <p class="card-descr_about">Про фильм</p>
+            <p class="card-descr_aboutfilm">
+              История о первом и решающем шаге Уинстона Черчилля на посту
+              премьер-министра Великобритании, получившего власть при чрезвычайных
+              обстоятельствах. Успехи нацистской армии взбудоражили британское
+              сообщество, но вопреки давлению и страху других политиков Черчилль
+              отказывается идти на соглашение с Гитлером.
+            </p>
+          </section>
+          
+      
+          <!-- Natalia Verb -->
+          <div class="actors-trailer">
+
+              <div class="actors-frame">
+            
+                <section class="actors">
+                  <p class="section-head">Актеры</p>
+                  <div class="arrows">
+                    <div class="wrap-arr">
+                      <img src="./images/left-arrow.svg" alt="" data-type="left" class="click-left, left-actors, btn-js ">
+                    </div>
+                    <div class="actors-list">
+                    </div>
+                    <div class="wrap-arr">
+                      <img src="./images/right-arrow.svg" alt="" data-type="right" class="click-right, right-actors, btn-js">
+                    </div>
+                  </div>
+                </section>
+            
+                <section class="film-frame">
+                  <p class="section-head">Постеры фильма</p>
+                  <div class="arrows">
+                    <div class="wrap-arr">
+                      <img width="20px" src="./images/left-arrow.svg" alt="" data-typeFrame="left" class="click-left, btns-js ">
+                    </div>
+                    <div class="frame-list">
+                    </div>
+                    <div class="wrap-arr">
+                      <img width="20px" src="./images/right-arrow.svg" alt="" data-typeFrame="right" class="click-right, btns-js">
+                    </div>
+                  </div>
+                </section>
+            
+              </div>
+            
+              <section class="trailer">
+                <p class="section-head">Трейлер</p>
+                <div class="wrapper-video">
+                </div>
+              </section>
+            
+            </div>
+          <!-- Victor -->
+          <section class="Viktor">
+            <div class="wrapper_Vikror">
+              <h2 class="reviews_Victor">Отзывы:</h2>
+              <div class="box_user">
+              </div>
+            </div>
+          </section>
+      </section>
+    
+    <!-- Kate footer -->
+    <section class="footer">
+        <div class="footerWrapper">
+            <ul class="footerIcons">
+                <li class="footerIcon twIcon"><a href="#"><img src="images/twitter.svg" alt="icon"></a></li>
+                <li class="footerIcon telIcon"><a href="#"><img src="images/telegram.svg" alt="icon"></a></li>
+                <li class="footerIcon vkIcon"><a href="#"><img src="images/vk.svg" alt="icon"></a></li>
+                <li class="footerIcon fbIcon"><a href="#"><img src="images/facebook.svg" alt="icon"></a></li>
+    
+            </ul>
+            <ul class="footerList headerFlex">
+                <li><a class="footerLink" href="#">Главная</a></li>
+                <li><a class="footerLink" href="#">Контакты</a></li>
+                <li><a class="footerLink" href="#">Правообладателям</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <script src="./js/cardDescr.js"></script>
+    <script src="../index.js"></script>
+  </body>
+</html>
