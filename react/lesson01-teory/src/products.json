@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "imgUrl": "https://placeimg.com/320/240/animals",
+    "name": "Product 1",
+    "price": "20",
+    "alt": ""
+  },
+  {
+    "id": 2,
+    "imgUrl": "https://placeimg.com/320/240/arch",
+    "name": "Product 2",
+    "price": "40",
+    "alt": ""
+  },
+  {
+    "id": 3,
+    "imgUrl": "https://placeimg.com/320/240/people",
+    "name": "Product 3",
+    "price": "150",
+    "alt": ""
+  },
+  {
+    "id": 4,
+    "imgUrl": "https://placeimg.com/320/240/tech",
+    "name": "Product 4",
+    "price": "50",
+    "alt": ""
+  }
+]

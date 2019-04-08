@@ -1,0 +1,7 @@
+.logo-img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    border: 2px solid red;
+    fill: red;
+}
