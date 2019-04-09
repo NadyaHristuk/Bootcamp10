@@ -1,5 +1,5 @@
 import React from 'react';
-import './Img.css';
+import './Img.module.css';
 
 const Img = ({src}) => (
     <img className="logo-img" src={src} />
