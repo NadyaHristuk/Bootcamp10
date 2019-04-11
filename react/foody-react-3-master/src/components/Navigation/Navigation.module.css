@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  list-style: none;
+}
+
+.link {
+  padding: 4px 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.link:hover {
+  color: palevioletred;
+}
