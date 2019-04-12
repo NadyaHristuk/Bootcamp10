@@ -1,0 +1,7 @@
+@value Font-size from './App.module.css';
+
+.text{
+    composes: text from './App.module.css';
+    text-align: left;
+    font-size: Font-size;
+}
