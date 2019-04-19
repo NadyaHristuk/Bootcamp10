@@ -18,6 +18,25 @@ export default class ItemPage extends Component {
       .then(item => this.setState({ ...item }));
   }
 
+  handleGoBack = () => {
+    const { state } = this.props.location;
+    const { category } = this.state;
+
+    console.log(state);
+
+    if (state) {
+      return this.props.history.push({
+        pathname: "/articles",
+        search: state.from
+      });
+    }
+
+    this.props.history.push({
+      pathname: "/articles",
+      search: `?category=${category}`
+    });
+  };
+
   render() {
     const { title, imageUrl, author, category, body } = this.state;
     return (
@@ -27,6 +46,7 @@ export default class ItemPage extends Component {
         author={author}
         category={category}
         body={body}
+        onClick={this.handleGoBack}
       />
     );
   }
