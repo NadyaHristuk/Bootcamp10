@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.name {
+  margin-left: 16px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.button {
+  margin-left: 8px;
+}

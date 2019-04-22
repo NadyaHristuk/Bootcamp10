@@ -1,0 +1,20 @@
+:global(html) {
+  box-sizing: border-box;
+}
+
+:global(*, *::before, *::after) {
+  box-sizing: inherit;
+}
+
+:global(body) {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+:global(button) {
+  cursor: pointer;
+}
+
+:global(button, input) {
+  font-family: inherit;
+}
