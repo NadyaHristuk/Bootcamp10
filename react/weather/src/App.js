@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import axios from "axios";
+import Loader from "react-loader-spinner";
 import WeatherToday from "./WeatherToday";
 import "./App.css";
+import Search from "./Search";
 
 const WEATHER_KEY = "32097cc475f84a0dac883738192204";
 
@@ -12,7 +14,7 @@ class App extends Component {
     numForecastDay: 5
   };
 
-  componentDidMount() {
+  updateWeather() {
     const { cityName, numForecastDay } = this.state;
     const URL = `http://api.apixu.com/v1/forecast.json?key=${WEATHER_KEY}&q=${cityName}&days=${numForecastDay}`;
     axios
@@ -34,6 +36,22 @@ class App extends Component {
       });
   }
 
+  componentDidMount() {
+    this.updateWeather();
+  }
+
+  cityNameUpdate = e => {
+    e.preventDefault();
+    // console.log(e.target.city.value);
+    this.setState(
+      {
+        cityName: e.target.city.value
+      },
+      () => this.updateWeather()
+    );
+    // console.log(this.state.cityName);
+  };
+
   render() {
     const {
       cityName,
@@ -43,18 +61,37 @@ class App extends Component {
       iconUrl,
       forecastDays
     } = this.state;
-
+    console.log(this.state);
     return (
       <>
         {isLoading ? (
-          <h3>Loading weather...</h3>
+          <div className="wrap">
+            <div className="wrapLoader">
+              <Loader
+                type="Circles"
+                color="#bbb"
+                height="80"
+                width="80"
+                margin="100px"
+              />
+            </div>
+          </div>
         ) : (
-          <WeatherToday
-            cityName={cityName}
-            temp_c={temp_c}
-            text={text}
-            iconUrl={iconUrl}
-          />
+          <div>
+            <WeatherToday
+              cityName={cityName}
+              temp_c={temp_c}
+              text={text}
+              iconUrl={iconUrl}
+            />
+
+            <Search getInput={this.cityNameUpdate} />
+            {/* <ul>
+              {forecastDays.map(item => (
+                <li>{item.date}</li>
+              ))}
+            </ul> */}
+          </div>
         )}
       </>
     );
