@@ -1,3 +1,7 @@
+/* * {
+  color: #fff;
+} */
+
 .wrap {
   background-position: center;
   background-size: cover;
@@ -16,4 +20,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.bgImage {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
