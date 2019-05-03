@@ -67,7 +67,7 @@ class App extends Component {
         return res.data;
       })
       .then(data => {
-        console.log(Math.floor(Math.random() * data.hits.length));
+        // console.log(Math.floor(Math.random() * data.hits.length));
         if (data.hits.length === 0) {
           this.setState({
             bgIMG: DefaultCityImg
@@ -122,7 +122,7 @@ class App extends Component {
       `https://pixabay.com/api/?key=${IMAGE_KEY}&q=${cityName}`
     );
     Promise.all([UpWeather, UpImg]).then(res => {
-      console.log(res[1].data.hits);
+      console.log(res);
       this.setState({
         isLoading: false,
         bgIMG:
