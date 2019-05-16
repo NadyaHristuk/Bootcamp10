@@ -1,0 +1,18 @@
+.channelsWrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.addChannelsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.paragraph {
+    color: white;
+}

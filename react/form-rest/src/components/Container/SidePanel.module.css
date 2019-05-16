@@ -1,0 +1,18 @@
+.sidePanel {
+  /* width: 15%; */
+  height: 100vh;
+  background-color: rebeccapurple;
+}
+
+.dialogs {
+  margin: 10px;
+  background-color: rebeccapurple;
+}
+.channels {
+  margin: 10px;
+  background-color: rebeccapurple;
+}
+.userPanel {
+  margin: 10px;
+  background-color: rebeccapurple;
+}

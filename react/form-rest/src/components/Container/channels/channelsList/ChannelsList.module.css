@@ -1,0 +1,28 @@
+.channelsListWrapper {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.channelPropery {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-left: 20px;
+}
+
+.channel {    
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-style: 100; 
+  
+}
+.channelActive {
+    color: gold;
+    text-shadow: 1px 1px 2px black, 0 0 1em gold;
+
+}

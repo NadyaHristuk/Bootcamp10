@@ -1,0 +1,18 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .name {
+    font-size: 5px;
+  }
+  .addChannels {
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    background-color: green;
+}

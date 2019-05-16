@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+html,
+body {
+  height: 100vh;
+  background: #eee;
+  padding: 1em;
+}
